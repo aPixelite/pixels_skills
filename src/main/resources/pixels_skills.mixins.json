@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "package": "net.apixelite.skills.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "ExampleMixin",
+    "ModCombatExpMixin",
+    "ModEntityDataSaverMixin",
+    "ModExploringExpMixin",
+    "ModFishingExpMixin",
+    "ModMiningExpMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+	}
+}

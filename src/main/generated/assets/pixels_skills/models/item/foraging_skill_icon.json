@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "pixels_skills:item/foraging_skill_icon"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "category.pixelskills.skills": "Skills",
+  "key.pixelskills.open": "Open Skill Book",
+  "gui.pixelskills.skill_book.book": "Skill Book",
+  "gui.pixelskills.skill_book.player": "Player",
+
+  "item.pixels_skills.combat_skill_icon": "Combat Skill Icon",
+  "item.pixels_skills.mining_skill_icon": "Mining Skill Icon",
+  "item.pixels_skills.foraging_skill_icon": "Foraging Skill Icon",
+  "item.pixels_skills.farming_skill_icon": "Farming Skill Icon",
+  "item.pixels_skills.fishing_skill_icon": "Fishing Skill Icon",
+  "item.pixels_skills.exploring_skill_icon": "Exploring Skill Icon"
+}

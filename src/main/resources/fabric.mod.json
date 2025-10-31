@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "pixels_skills",
+	"version": "0.0.1",
+	"name": "Pixels Skills",
+	"description": "A mod that adds skills for extra grinding.",
+	"authors": [
+		"aPixelite"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/pixels_skills/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.apixelite.skills.PixelsSkills"
+		],
+		"client": [
+			"net.apixelite.skills.PixelSkillsClient"
+		],
+		"fabric-datagen": [
+			"net.apixelite.skills.PixelsSkillsDataGenerator"
+		]
+	},
+	"mixins": [
+		"pixels_skills.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": "~1.21.5",
+		"java": ">=21",
+		"fabric-api": "*",
+		"fabric-key-binding-api-v1": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

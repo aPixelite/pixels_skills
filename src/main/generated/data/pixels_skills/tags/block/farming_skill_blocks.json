@@ -1,0 +1,20 @@
+{
+  "values": [
+    "#pixels_skills:crops",
+    "#pixels_skills:tall_crops",
+    "#pixels_skills:flowers",
+    "minecraft:pumpkin",
+    "minecraft:melon",
+    "minecraft:brown_mushroom",
+    "minecraft:red_mushroom",
+    "minecraft:torchflower",
+    "minecraft:warped_roots",
+    "minecraft:crimson_roots",
+    "minecraft:nether_sprouts",
+    "minecraft:crimson_fungus",
+    "minecraft:warped_fungus",
+    "minecraft:weeping_vines_plant",
+    "minecraft:chorus_flower",
+    "minecraft:chorus_plant"
+  ]
+}

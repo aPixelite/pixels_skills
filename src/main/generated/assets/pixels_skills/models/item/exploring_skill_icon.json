@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "pixels_skills:item/exploring_skill_icon"
+  }
+}

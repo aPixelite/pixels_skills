@@ -1,6 +1,5 @@
 package net.apixelite.skills.mixin;
 
-import net.apixelite.skills.PixelsSkills;
 import net.apixelite.skills.item.ModItems;
 import net.apixelite.skills.item.components.ModDataComponentTypes;
 import net.apixelite.skills.item.components.ModToolComponent;

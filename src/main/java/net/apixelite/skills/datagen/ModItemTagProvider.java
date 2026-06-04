@@ -23,7 +23,6 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(Items.LEATHER)
                 .add(Items.LEATHER_BOOTS)
                 .add(Items.ROTTEN_FLESH)
-//                .add((Item) Potions.WATER)
                 .add(Items.TRIPWIRE_HOOK)
                 .add(Items.STICK)
                 .add(Items.STRING)

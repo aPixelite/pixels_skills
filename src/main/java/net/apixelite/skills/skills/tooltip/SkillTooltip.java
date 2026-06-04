@@ -1,7 +1,7 @@
-package net.apixelite.skills.util.tooltip;
+package net.apixelite.skills.skills.tooltip;
 
 import net.apixelite.skills.skills.icons.SkillIcon;
-import net.apixelite.skills.util.SkillData;
+import net.apixelite.skills.skills.SkillData;
 import net.apixelite.skills.util.TooltipHelper;
 import net.minecraft.item.ItemStack;
 import org.jetbrains.annotations.NotNull;

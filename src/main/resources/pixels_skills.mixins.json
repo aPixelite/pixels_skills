@@ -4,11 +4,13 @@
   "compatibilityLevel": "JAVA_21",
   "mixins": [
     "ExampleMixin",
-    "ModCombatExpMixin",
-    "ModEntityDataSaverMixin",
-    "ModExploringExpMixin",
-    "ModFishingExpMixin",
-    "ModMiningExpMixin"
+    "MiningMixin",
+    "ModEntityAttributeMixin",
+    "skills.ModCombatExpMixin",
+    "skills.ModEntityDataSaverMixin",
+    "skills.ModExploringExpMixin",
+    "skills.ModFishingExpMixin",
+    "skills.ModMiningExpMixin"
   ],
   "injectors": {
     "defaultRequire": 1

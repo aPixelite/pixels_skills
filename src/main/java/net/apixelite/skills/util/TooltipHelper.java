@@ -1,7 +1,7 @@
 package net.apixelite.skills.util;
 
 import net.apixelite.skills.skills.icons.SkillIcon;
-import net.apixelite.skills.util.tooltip.SkillTooltip;
+import net.apixelite.skills.skills.tooltip.SkillTooltip;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.item.ItemStack;
@@ -16,9 +16,6 @@ public class TooltipHelper {
     public static void appendTooltip(@NotNull ItemStack stack, @NotNull List<Text> tooltip) {
 
         if (stack.getItem() instanceof SkillIcon) {
-//            if (stack.isOf(Icons.MINING_SKILL_ICON)) {
-//                MiningSkillTooltip.buildTooltip(tooltip, stack);
-//            }
             SkillTooltip.buildTooltip(tooltip, stack);
         }
 

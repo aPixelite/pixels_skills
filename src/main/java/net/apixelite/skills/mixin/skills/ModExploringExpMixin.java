@@ -1,8 +1,7 @@
-package net.apixelite.skills.mixin;
+package net.apixelite.skills.mixin.skills;
 
 import com.llamalad7.mixinextras.sugar.Local;
-import net.apixelite.skills.util.SkillData;
-import net.apixelite.skills.util.SkillDataKeys;
+import net.apixelite.skills.skills.SkillData;
 import net.minecraft.network.packet.c2s.play.PlayerMoveC2SPacket;
 import net.minecraft.network.packet.c2s.play.VehicleMoveC2SPacket;
 import net.minecraft.server.network.ServerPlayNetworkHandler;
@@ -27,7 +26,7 @@ public class ModExploringExpMixin {
         if (!isZero(this.player.getX() - i, this.player.getY() - j, this.player.getZ() - k)) {
             this.i += 1;
             if (this.i > 20) {
-            SkillData.addExp(this.player, 1, SkillDataKeys.EXPLORING);
+            SkillData.addExp(this.player, 1, SkillData.ESkillDataKeys.EXPLORING);
             this.i = 0;
             }
         }
@@ -38,7 +37,7 @@ public class ModExploringExpMixin {
         if (!isZero(this.player.getX() - i, this.player.getY() - j, this.player.getZ() - k)) {
             this.i += 1;
             if (this.i > 20) {
-                SkillData.addExp(this.player, 1, SkillDataKeys.EXPLORING);
+                SkillData.addExp(this.player, 1, SkillData.ESkillDataKeys.EXPLORING);
                 this.i = 0;
             }
         }

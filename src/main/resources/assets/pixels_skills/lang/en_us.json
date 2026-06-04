@@ -1,13 +1,71 @@
 {
   "category.pixelskills.skills": "Skills",
-  "key.pixelskills.open": "Open Skill Book",
-  "gui.pixelskills.skill_book.book": "Skill Book",
+  "key.pixelskills.open.skills": "Open Skill Menu",
+  "gui.pixelskills.skill_book.book": "Skill Menu",
   "gui.pixelskills.skill_book.player": "Player",
+
+  "category.pixelskills.stats": "Stats",
+  "key.pixelskills.open.stats": "Open Stats Menu",
+  "gui.pixelskills.attribute.attributes": "Attributes",
+  "gui.pixelskills.attribute.mining": "Mining Skill",
+  "gui.pixelskills.attribute.rewards": "Rewards",
+
+  "itemgroup.skills_group": "Skills Items",
+  "item.pixels_skills.mod_pickaxe": "Wooden Pickaxe",
 
   "item.pixels_skills.combat_skill_icon": "Combat Skill Icon",
   "item.pixels_skills.mining_skill_icon": "Mining Skill Icon",
   "item.pixels_skills.foraging_skill_icon": "Foraging Skill Icon",
   "item.pixels_skills.farming_skill_icon": "Farming Skill Icon",
   "item.pixels_skills.fishing_skill_icon": "Fishing Skill Icon",
-  "item.pixels_skills.exploring_skill_icon": "Exploring Skill Icon"
+  "item.pixels_skills.exploring_skill_icon": "Exploring Skill Icon",
+
+  "attribute.health": "§c❤ Health",
+  "attribute.defence": "§a❇ Defence",
+  "attribute.strength": "§c\uD83D\uDDE1 Strength",
+  "attribute.damage": "§4❁ Damage",
+  "attribute.crit_damage": "§9☠ Crit Damage",
+  "attribute.crit_chance": "§9☣ Crit Chance",
+  "attribute.attack_speed": "§e⚔ Attack Speed",
+
+  "attribute.mining_speed": "§6⛏ Mining Speed",
+  "attribute.mining_fortune": "§6☘ Mining Fortune",
+  "attribute.block_mining_spread": "§e⬌ Mining Spread",
+  "attribute.ore_mining_spread": "§e⬌ Ore Spread",
+  "attribute.breaking_power": "§2Ⓟ Breaking Power",
+
+  "attribute.farming_fortune": "§6☘ Farming Fortune",
+
+  "attribute.foraging_fortune": "§6☘ Foraging Fortune",
+  "attribute.sweep": "§2ჶ Sweep",
+
+  "attribute.fishing_speed": "§b\uD83C\uDFA3 Fishing Speed",
+  "attribute.treasure_chance": "§6☀ Treasure Chance",
+  "attribute.sea_creature_chance": "§3⚓ Sea Creature Luck",
+
+  "attribute.respiration": "§9⏳ Respiration",
+  "attribute.speed": "§f⚡ Speed",
+
+  "tag.item.pixels_skills.fishing_junk": "Fishing Junk",
+  "tag.item.pixels_skills.fishing_treasure": "Fishing Treasure",
+
+  "tag.block.pixels_skills.breaking_power_1": "Breaking Power 1",
+  "tag.block.pixels_skills.breaking_power_2": "Breaking Power 2",
+  "tag.block.pixels_skills.breaking_power_3": "Breaking Power 3",
+  "tag.block.pixels_skills.breaking_power_4": "Breaking Power 4",
+  "tag.block.pixels_skills.breaking_power_5": "Breaking Power 5",
+
+  "tag.block.pixels_skills.incorrect_for_power_1": "Incorrect For Power 1",
+  "tag.block.pixels_skills.incorrect_for_power_2": "Incorrect For Power 2",
+  "tag.block.pixels_skills.incorrect_for_power_3": "Incorrect For Power 3",
+  "tag.block.pixels_skills.incorrect_for_power_4": "Incorrect For Power 4",
+  "tag.block.pixels_skills.incorrect_for_power_5": "Incorrect For Power 5",
+
+  "tag.block.pixels_skills.mining_skill_blocks": "Mining Skill Blocks",
+  "tag.block.pixels_skills.foraging_skill_blocks": "Foraging Skill Blocks",
+  "tag.block.pixels_skills.farming_skill_blocks": "Farming Skill Blocks",
+  "tag.block.pixels_skills.crops": "Crops",
+  "tag.block.pixels_skills.tall_crops": "Tall Crops",
+  "tag.block.pixels_skills.flowers": "Flowers"
+
 }

@@ -1,8 +1,6 @@
 package net.apixelite.skills;
 
-import net.apixelite.skills.datagen.ModBlockTagProvider;
-import net.apixelite.skills.datagen.ModItemTagProvider;
-import net.apixelite.skills.datagen.ModModelProvider;
+import net.apixelite.skills.datagen.*;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 
@@ -14,6 +12,7 @@ public class PixelsSkillsDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModItemTagProvider::new);
 		pack.addProvider(ModBlockTagProvider::new);
 		pack.addProvider(ModModelProvider::new);
+		pack.addProvider(ModAdvancementsProvider::new);
 
 	}
 }

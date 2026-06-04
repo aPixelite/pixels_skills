@@ -1,7 +1,7 @@
-package net.apixelite.skills.mixin;
+package net.apixelite.skills.mixin.skills;
 
 import com.mojang.authlib.GameProfile;
-import net.apixelite.skills.util.SkillData;
+import net.apixelite.skills.skills.SkillData;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.server.network.ServerPlayerEntity;

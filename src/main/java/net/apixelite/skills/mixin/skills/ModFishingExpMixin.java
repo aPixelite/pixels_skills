@@ -1,9 +1,8 @@
-package net.apixelite.skills.mixin;
+package net.apixelite.skills.mixin.skills;
 
 import com.llamalad7.mixinextras.sugar.Local;
 import net.apixelite.skills.util.ModTags;
-import net.apixelite.skills.util.SkillData;
-import net.apixelite.skills.util.SkillDataKeys;
+import net.apixelite.skills.skills.SkillData;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.FishingBobberEntity;
 import net.minecraft.item.*;
@@ -14,9 +13,6 @@ import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
-
-import java.util.Iterator;
-import java.util.List;
 
 @Mixin(FishingBobberEntity.class)
 public class ModFishingExpMixin {
@@ -37,7 +33,7 @@ public class ModFishingExpMixin {
             }
             this.i = 1;
 
-            SkillData.addExp(((ServerPlayerEntity) playerEntity), amount, SkillDataKeys.FISHING);
+            SkillData.addExp(((ServerPlayerEntity) playerEntity), amount, SkillData.ESkillDataKeys.FISHING);
         } else if (this.i == 1) {
             this.i = 0;
         }

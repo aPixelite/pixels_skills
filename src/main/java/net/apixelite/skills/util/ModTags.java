@@ -16,6 +16,18 @@ public class ModTags {
         public static final TagKey<Block> TALL_CROPS = createTag("tall_crops");
         public static final TagKey<Block> FLOWERS = createTag("flowers");
 
+        public static final TagKey<Block> BREAKING_POWER_1 = createTag("breaking_power_1");
+        public static final TagKey<Block> BREAKING_POWER_2 = createTag("breaking_power_2");
+        public static final TagKey<Block> BREAKING_POWER_3 = createTag("breaking_power_3");
+        public static final TagKey<Block> BREAKING_POWER_4 = createTag("breaking_power_4");
+        public static final TagKey<Block> BREAKING_POWER_5 = createTag("breaking_power_5");
+
+        public static final TagKey<Block> INCORRECT_FOR_POWER_1 = createTag("incorrect_for_power_1");
+        public static final TagKey<Block> INCORRECT_FOR_POWER_2 = createTag("incorrect_for_power_2");
+        public static final TagKey<Block> INCORRECT_FOR_POWER_3 = createTag("incorrect_for_power_3");
+        public static final TagKey<Block> INCORRECT_FOR_POWER_4 = createTag("incorrect_for_power_4");
+        public static final TagKey<Block> INCORRECT_FOR_POWER_5 = createTag("incorrect_for_power_5");
+
         private static TagKey<Block> createTag(String name) {
             return TagKey.of(RegistryKeys.BLOCK, Identifier.of(PixelsSkills.MOD_ID, name));
         }

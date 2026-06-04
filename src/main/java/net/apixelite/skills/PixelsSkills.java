@@ -1,7 +1,12 @@
 package net.apixelite.skills;
 
+import net.apixelite.skills.attributes.stats.ModAttributes;
+import net.apixelite.skills.block.ModBlocks;
 import net.apixelite.skills.command.ModArgumentTypes;
 import net.apixelite.skills.command.ModCommands;
+import net.apixelite.skills.item.components.ModDataComponentTypes;
+import net.apixelite.skills.item.ModItemGroups;
+import net.apixelite.skills.item.ModItems;
 import net.apixelite.skills.network.payload.ModPayloads;
 import net.apixelite.skills.skills.icons.Icons;
 import net.fabricmc.api.ModInitializer;
@@ -18,12 +23,19 @@ public class PixelsSkills implements ModInitializer {
 
 		LOGGER.info("Loading Pixels skills mod!");
 
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
+		Icons.registerSkillIcons();
+		ModItemGroups.registerItemGroups();
+
 		ModArgumentTypes.registerArgumentTypes();
 		ModCommands.registerModCommands();
 
 		ModPayloads.registerS2CPayloads();
 
-		Icons.registerSkillIcons();
+		ModAttributes.registerModAttributes();
+
+		ModDataComponentTypes.registerModDataComponentTypes();
 
 	}
 }

@@ -16,6 +16,52 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
+        getOrCreateTagBuilder(ModTags.Blocks.BREAKING_POWER_1)
+                .add(
+                        Blocks.STONE,
+                        Blocks.GRANITE,
+                        Blocks.DIORITE,
+                        Blocks.ANDESITE,
+                        Blocks.COAL_BLOCK
+                )
+                .forceAddTag(BlockTags.COAL_ORES);
+
+        getOrCreateTagBuilder(ModTags.Blocks.BREAKING_POWER_2)
+                .add(
+                        Blocks.COPPER_BLOCK,
+                        Blocks.RAW_COPPER_BLOCK
+                )
+                .forceAddTag(BlockTags.COPPER_ORES);
+
+        getOrCreateTagBuilder(ModTags.Blocks.BREAKING_POWER_3)
+                .add(
+                        Blocks.DEEPSLATE,
+                        Blocks.TUFF,
+                        Blocks.GOLD_BLOCK,
+                        Blocks.IRON_BLOCK,
+                        Blocks.RAW_IRON_BLOCK
+                )
+                .forceAddTags(BlockTags.GOLD_ORES, BlockTags.IRON_ORES);
+
+        getOrCreateTagBuilder(ModTags.Blocks.BREAKING_POWER_4)
+                .add(Blocks.DIAMOND_BLOCK)
+                .forceAddTag(BlockTags.DIAMOND_ORES)
+                .add(Blocks.EMERALD_BLOCK)
+                .forceAddTag(BlockTags.EMERALD_ORES);
+
+        getOrCreateTagBuilder(ModTags.Blocks.BREAKING_POWER_5)
+                .add(Blocks.NETHERITE_BLOCK, Blocks.ANCIENT_DEBRIS);
+
+        getOrCreateTagBuilder(ModTags.Blocks.INCORRECT_FOR_POWER_1)
+                .forceAddTags(ModTags.Blocks.BREAKING_POWER_2, ModTags.Blocks.BREAKING_POWER_3, ModTags.Blocks.BREAKING_POWER_4, ModTags.Blocks.BREAKING_POWER_5);
+        getOrCreateTagBuilder(ModTags.Blocks.INCORRECT_FOR_POWER_2)
+                .forceAddTags(ModTags.Blocks.BREAKING_POWER_3, ModTags.Blocks.BREAKING_POWER_4, ModTags.Blocks.BREAKING_POWER_5);
+        getOrCreateTagBuilder(ModTags.Blocks.INCORRECT_FOR_POWER_3)
+                .forceAddTags(ModTags.Blocks.BREAKING_POWER_4, ModTags.Blocks.BREAKING_POWER_5);
+        getOrCreateTagBuilder(ModTags.Blocks.INCORRECT_FOR_POWER_4)
+                .forceAddTags(ModTags.Blocks.BREAKING_POWER_5);
+        getOrCreateTagBuilder(ModTags.Blocks.INCORRECT_FOR_POWER_5);
+
         getOrCreateTagBuilder(ModTags.Blocks.MINING_SKILL_BLOCKS)
                 .forceAddTag(BlockTags.COAL_ORES)
                 .forceAddTag(BlockTags.COPPER_ORES)

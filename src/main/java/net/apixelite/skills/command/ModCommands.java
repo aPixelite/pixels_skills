@@ -4,12 +4,13 @@ import com.mojang.brigadier.arguments.IntegerArgumentType;
 import com.mojang.brigadier.arguments.StringArgumentType;
 import com.mojang.brigadier.context.CommandContext;
 import net.apixelite.skills.command.suggestions.SkillSuggestionProvider;
-import net.apixelite.skills.util.SkillData;
-import net.apixelite.skills.util.SkillDataKeys;
+import net.apixelite.skills.skills.SkillData;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.minecraft.server.command.CommandManager;
 import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.text.Text;
+
+import java.util.Objects;
 
 public class ModCommands {
 
@@ -36,47 +37,24 @@ public class ModCommands {
     public static int addSkillExp(CommandContext<ServerCommandSource> context) {
         String type = StringArgumentType.getString(context, "type");
         int amount = IntegerArgumentType.getInteger(context, "amount");
-
-        switch (type) {
-            case "combat" -> SkillData.setExp(context.getSource().getPlayer(), amount, SkillDataKeys.COMBAT);
-            case "mining" -> SkillData.setExp(context.getSource().getPlayer(), amount, SkillDataKeys.MINING);
-            case "foraging" -> SkillData.setExp(context.getSource().getPlayer(), amount, SkillDataKeys.FORAGING);
-            case "farming" -> SkillData.setExp(context.getSource().getPlayer(), amount, SkillDataKeys.FARMING);
-            case "fishing" -> SkillData.setExp(context.getSource().getPlayer(), amount, SkillDataKeys.FISHING);
-            case "exploring" -> SkillData.setExp(context.getSource().getPlayer(), amount, SkillDataKeys.EXPLORING);
-        }
-
+        SkillData.setExp(context.getSource().getPlayer(), amount, SkillData.ESkillDataKeys.valueOf(type));
         return 0;
     }
 
     public static int addSkillLevel(CommandContext<ServerCommandSource> context) {
         String type = StringArgumentType.getString(context, "type");
         int amount = IntegerArgumentType.getInteger(context, "amount");
-
-        switch (type) {
-            case "combat" -> SkillData.setLevel(context.getSource().getPlayer(), amount, SkillDataKeys.COMBAT);
-            case "mining" -> SkillData.setLevel(context.getSource().getPlayer(), amount, SkillDataKeys.MINING);
-            case "foraging" -> SkillData.setLevel(context.getSource().getPlayer(), amount, SkillDataKeys.FORAGING);
-            case "farming" -> SkillData.setLevel(context.getSource().getPlayer(), amount, SkillDataKeys.FARMING);
-            case "fishing" -> SkillData.setLevel(context.getSource().getPlayer(), amount, SkillDataKeys.FISHING);
-            case "exploring" -> SkillData.setLevel(context.getSource().getPlayer(), amount, SkillDataKeys.EXPLORING);
-        }
-
+        SkillData.setLevel(context.getSource().getPlayer(), amount, SkillData.ESkillDataKeys.valueOf(type));
         return 0;
     }
 
 
     public static int executeResetSkill(CommandContext<ServerCommandSource> context) {
         String type = StringArgumentType.getString(context, "type");
-
-        switch (type) {
-            case "combat" -> SkillData.resetData(context.getSource().getPlayer(), SkillDataKeys.COMBAT);
-            case "mining" -> SkillData.resetData(context.getSource().getPlayer(), SkillDataKeys.MINING);
-            case "foraging" -> SkillData.resetData(context.getSource().getPlayer(), SkillDataKeys.FORAGING);
-            case "farming" -> SkillData.resetData(context.getSource().getPlayer(), SkillDataKeys.FARMING);
-            case "fishing" -> SkillData.resetData(context.getSource().getPlayer(), SkillDataKeys.FISHING);
-            case "exploring" -> SkillData.resetData(context.getSource().getPlayer(), SkillDataKeys.EXPLORING);
-            case "all" -> SkillData.resetAllData(context.getSource().getPlayer());
+        if (Objects.equals(type, "all")) {
+            SkillData.resetAllData(context.getSource().getPlayer());
+        } else {
+            SkillData.resetData(context.getSource().getPlayer(), SkillData.ESkillDataKeys.valueOf(type));
         }
 
         context.getSource().sendFeedback(() -> Text.literal("Reset " + type + " skill data for " + context.getSource().getPlayer().getName().getString()), false);

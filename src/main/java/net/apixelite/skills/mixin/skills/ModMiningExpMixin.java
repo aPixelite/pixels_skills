@@ -1,8 +1,7 @@
-package net.apixelite.skills.mixin;
+package net.apixelite.skills.mixin.skills;
 
 import net.apixelite.skills.util.ModTags;
-import net.apixelite.skills.util.SkillData;
-import net.apixelite.skills.util.SkillDataKeys;
+import net.apixelite.skills.skills.SkillData;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerEntity;
@@ -27,13 +26,13 @@ public class ModMiningExpMixin {
             int amount = (int) ( state.getBlock().getHardness() * 4);
 
             if (state.isIn(ModTags.Blocks.MINING_SKILL_BLOCKS)) {
-                SkillData.addExp(serverPlayer, amount, SkillDataKeys.MINING);
+                SkillData.addExp(serverPlayer, amount, SkillData.ESkillDataKeys.MINING);
             }
             else if (state.isIn(ModTags.Blocks.FORAGING_SKILL_BLOCKS)) {
                 if (state.isIn(BlockTags.LOGS)) {
-                    SkillData.addExp(serverPlayer, amount, SkillDataKeys.FORAGING);
+                    SkillData.addExp(serverPlayer, amount, SkillData.ESkillDataKeys.FORAGING);
                 } else {
-                    SkillData.addExp(serverPlayer, 2, SkillDataKeys.FORAGING);
+                    SkillData.addExp(serverPlayer, 2, SkillData.ESkillDataKeys.FORAGING);
                 }
             }
             else if (state.isIn(ModTags.Blocks.FARMING_SKILL_BLOCKS)) {

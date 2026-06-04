@@ -1,5 +1,6 @@
 package net.apixelite.skills.datagen;
 
+import net.apixelite.skills.item.ModItems;
 import net.apixelite.skills.skills.icons.Icons;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -25,6 +26,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(Icons.FARMING_SKILL_ICON, Models.HANDHELD);
         itemModelGenerator.register(Icons.FISHING_SKILL_ICON, Models.HANDHELD);
         itemModelGenerator.register(Icons.EXPLORING_SKILL_ICON, Models.HANDHELD);
+
+        itemModelGenerator.register(ModItems.MOD_PICKAXE, Models.HANDHELD);
 
     }
 }

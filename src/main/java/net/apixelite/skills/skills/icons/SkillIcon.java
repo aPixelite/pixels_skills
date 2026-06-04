@@ -1,6 +1,6 @@
 package net.apixelite.skills.skills.icons;
 
-import net.apixelite.skills.util.SkillData;
+import net.apixelite.skills.skills.SkillData;
 import net.minecraft.item.Item;
 
 public class SkillIcon extends Item {
@@ -19,54 +19,10 @@ public class SkillIcon extends Item {
     }
 
     public int getExp() {
-        switch (this.type) {
-            case "combat" -> {
-                return SkillData.combat_exp;
-            }
-            case "mining" -> {
-                return SkillData.mining_exp;
-            }
-            case "foraging" -> {
-                return SkillData.foraging_exp;
-            }
-            case "farming" -> {
-                return SkillData.farming_exp;
-            }
-            case "fishing" -> {
-                return SkillData.fishing_exp;
-            }
-            case "exploring" -> {
-                return SkillData.exploring_exp;
-            }
-            default -> {
-                return 0;
-            }
-        }
+        return SkillData.ESkillDataKeys.valueOf(this.type.toUpperCase()).exp;
     }
 
     public int getLevel() {
-        switch (this.type) {
-            case "combat" -> {
-                return SkillData.combat_level;
-            }
-            case "mining" -> {
-                return SkillData.mining_level;
-            }
-            case "foraging" -> {
-                return SkillData.foraging_level;
-            }
-            case "farming" -> {
-                return SkillData.farming_level;
-            }
-            case "fishing" -> {
-                return SkillData.fishing_level;
-            }
-            case "exploring" -> {
-                return SkillData.exploring_level;
-            }
-            default -> {
-                return 0;
-            }
-        }
+        return SkillData.ESkillDataKeys.valueOf(this.type.toUpperCase()).level;
     }
 }

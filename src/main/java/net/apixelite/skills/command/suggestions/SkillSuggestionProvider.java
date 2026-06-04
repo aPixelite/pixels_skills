@@ -13,7 +13,7 @@ import java.util.concurrent.CompletableFuture;
 
 public class SkillSuggestionProvider implements SuggestionProvider<ServerCommandSource> {
     @Override
-    public CompletableFuture<Suggestions> getSuggestions(CommandContext<ServerCommandSource> context, SuggestionsBuilder builder) throws CommandSyntaxException {
+    public CompletableFuture<Suggestions> getSuggestions(CommandContext<ServerCommandSource> context, SuggestionsBuilder builder) {
 
         List<String> skills = new ArrayList<>();
 

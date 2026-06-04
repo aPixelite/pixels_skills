@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "I": "#minecraft:planks",
+    "S": "minecraft:stick"
+  },
+  "pattern": [
+    "III",
+    " S ",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "pixels_skills:mod_pickaxe"
+  }
+}

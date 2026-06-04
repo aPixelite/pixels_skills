@@ -1,0 +1,11 @@
+{
+  "values": [
+    "minecraft:deepslate",
+    "minecraft:tuff",
+    "minecraft:gold_block",
+    "minecraft:iron_block",
+    "minecraft:raw_iron_block",
+    "#minecraft:gold_ores",
+    "#minecraft:iron_ores"
+  ]
+}
